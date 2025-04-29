@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fact File - Watts and Worth</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen w-full flex flex-col overflow-hidden">
+
+ <!-- Navbar -->
+<header class="sticky top-0 z-50 bg-green-100 shadow-md">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-10">
+        <a href="/" class="flex items-center">
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="w-10 h-10" />
+        </a>
+        <nav class="flex space-x-6 font-semibold text-base">
+          <a href="/about" class="hover:text-green-700">About</a>
+          <a href="/calculator" class="hover:text-green-700">Green Calculator</a>
+          <a href="/facts" class="hover:text-green-700">Factfile</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Scrollable Content -->
+  <div class="flex-1 overflow-y-auto">
+    <!-- Top Image -->
+    <img src="{{ url_for('static', filename='factfile.png') }}" alt="Fact File" class="w-full object-cover max-h-[60vh]" />
+
+
+    <!-- Heading -->
+    <div class="text-center py-6 px-4">
+      <h1 class="text-3xl font-bold text-green-800">
+        The What, Why and How of Carbon Credits
+      </h1>
+    </div>
+
+    <!-- Content Box -->
+    <div class="px-4 pb-10">
+      <div class="bg-white shadow-md p-6 max-w-5xl mx-auto space-y-6 text-gray-800 text-justify">
+        <div>
+          <h2 class="text-xl font-semibold mb-2">What Are Carbon Credits?</h2>
+          <p>Carbon credits are tradable certificates or permits that represent the right to emit one metric tonne of carbon dioxide (CO₂) or the equivalent amount of another greenhouse gas (GHG). These credits are used as part of market-based approaches to controlling pollution, where companies can trade them to meet their emission reduction targets.</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-2">A Brief History: Where It All Began</h2>
+          <p>The concept of carbon credits emerged from the global community's growing concern about climate change, particularly during the 1997 Kyoto Protocol. This treaty established legally binding obligations for developed countries to reduce their greenhouse gas emissions. It laid the foundation for carbon markets by allowing countries to earn carbon credits through projects that reduced emissions.</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Why Do Carbon Credits Exist?</h2>
+          <p>Carbon credits were established to economically incentivize the reduction of greenhouse gas emissions. By assigning a monetary value to emissions, companies are encouraged to innovate and reduce their carbon footprint. This system allows for a cost-effective method to achieve environmental goals while also promoting sustainable development.</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-2">How Do They Work?</h2>
+          <p>Carbon credits function within a cap-and-trade system or voluntary carbon markets. In a cap-and-trade system, a government sets a cap on the total amount of emissions and distributes allowances. Companies that reduce their emissions below their allowance can sell excess credits to those exceeding their limits. In voluntary markets, businesses or individuals can purchase credits to offset their carbon footprint, often from projects like reforestation or renewable energy initiatives.</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Types of Carbon Markets</h2>
+          <p>There are two main types: Compliance markets and Voluntary markets. Compliance markets are regulated and mandatory for companies under specific jurisdictions, such as the EU Emissions Trading System. Voluntary markets, on the other hand, enable entities to offset their emissions without regulatory obligations, often driven by corporate social responsibility goals.</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-2">The Bottom Line</h2>
+          <p>Carbon credits are a vital tool in the fight against climate change. By placing a financial cost on carbon emissions, they motivate behavioral and technological shifts toward a low-carbon future. While not a standalone solution, they complement broader policies and innovations aimed at sustainability.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

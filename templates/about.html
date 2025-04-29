@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Watts and Worth</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+ <!-- Navbar -->
+<header class="sticky top-0 z-50 bg-green-100 shadow-md">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div class="flex items-center space-x-10">
+        <a href="/" class="flex items-center">
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="w-10 h-10" />
+        </a>
+        <nav class="flex space-x-6 font-semibold text-base">
+          <a href="/about" class="hover:text-green-700">About</a>
+          <a href="/calculator" class="hover:text-green-700">Green Calculator</a>
+          <a href="/facts" class="hover:text-green-700">Factfile</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- About Section -->
+  <section class="px-6 py-12 max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl font-bold text-green-800 mb-6">ABOUT</h1>
+
+    <!-- Logo Centered -->
+    <div class="flex justify-center mb-6">
+      <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo" class="w-20 h-20">
+    </div>
+
+    <!-- About Content -->
+    <div class="text-lg text-gray-700 space-y-6">
+      <p><strong>Watts and Worth</strong> is a sustainability-focused platform designed to quantify the environmental and financial impact of renewable energy generation. This project calculates energy output, CO₂ mitigation, and carbon credit potential based on user inputs across four major green energy sources—solar, wind, hydro, and biomass.</p>
+
+      <p>Built with accessibility and awareness in mind, the platform aims to bridge the gap between green action and green impact. Whether you're exploring the benefits of installing solar panels, analyzing the impact of a wind turbine project, or simply curious about your eco-contribution—Watts and Worth offers precise insights and easy-to-use tools to guide your decisions.</p>
+
+      <p class="text-left">
+        <strong>Our mission is simple:</strong><br>
+        ✅ Help users understand the true value of renewable energy.<br>
+        ✅ Promote transparency and accountability in sustainability reporting.<br>
+        ✅ Enable climate-conscious individuals and organizations to track and amplify their green impact.
+      </p>
+
+      <p><strong>Watts and Worth</strong> is more than just a calculator—it’s a step towards a smarter, cleaner, and greener future.</p>
+
+      <p class="italic text-green-800 font-semibold text-xl">Quantifying Green. Amplifying Good.</p>
+    </div>
+  </section>
+</body>
+</html>
