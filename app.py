@@ -127,4 +127,4 @@ def predict():
         return render_template("error.html", message=f"Error occurred: {str(e)}")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
